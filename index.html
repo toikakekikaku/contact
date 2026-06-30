@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トイカケ企画 お問い合わせ</title>
     <style>
-        <style>
-    /* フォームのメッセージ欄を大きくする */
-    .formrun-embed textarea {
-        min-height: 200px !important;
-    }
-
-    /* 全体のフォントを明朝体にする */
-    body {
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-    }
-</style>
-        /* 入力欄を大きくするスタイル */
+        /* フォントを明朝体に設定 */
+        body {
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+            padding: 20px;
+        }
+        /* 入力欄を大きくする */
         .formrun-embed textarea {
             min-height: 200px !important;
         }
@@ -24,9 +18,9 @@
 </head>
 <body>
 
-    <h1>トイカケ企画 お問い合わせフォーム</h1>
+    <h1>トイカケ企画 お問い合わせ</h1>
 
-    <script src="https://sdk.form.run/js/v2/embed.js"></script>
+    <script src="https://sdk.form.run/js/v2/embed.js" defer></script>
     <div class="formrun-embed"
       data-formrun-form="@toikakekikaku-contact"
       data-formrun-redirect="true">
