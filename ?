@@ -1,21 +1,25 @@
-/* フォームの入力欄を大きくする */
-.formrun-embed input[type="text"],
-.formrun-embed input[type="email"],
-.formrun-embed textarea {
-    width: 100% !important; /* 横幅を最大に */
-    padding: 15px !important; /* 内側の余白を増やして入力しやすく */
-    font-size: 16px !important; /* スマホで見たときに拡大されないサイズに */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>トイカケ企画 お問い合わせ</title>
+    <style>
+        /* ここでメッセージ欄の高さを指定します */
+        .formrun-embed textarea {
+            min-height: 200px !important; /* 高さを200pxにする */
+            font-size: 16px !important;   /* スマホで見やすいサイズ */
+        }
+    </style>
+</head>
+<body>
 
-/* メッセージ（textarea）の高さをもっと確保する */
-.formrun-embed textarea {
-    height: 150px !important; /* 高さを指定して広くする */
-}<script src="https://sdk.form.run/js/v2/embed.js"></script>
-<div
-  class="formrun-embed"
-  data-formrun-form="@toikakekikaku-contact"
-  data-formrun-redirect="true"
->
-</div>
+    <h1>お問い合わせ</h1>
+
+    <script src="https://sdk.form.run/js/v2/embed.js"></script>
+    <div class="formrun-embed"
+      data-formrun-form="@toikakekikaku-contact"
+      data-formrun-redirect="true">
+    </div>
+
+</body>
+</html>
