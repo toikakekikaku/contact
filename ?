@@ -1,0 +1,21 @@
+/* フォームの入力欄を大きくする */
+.formrun-embed input[type="text"],
+.formrun-embed input[type="email"],
+.formrun-embed textarea {
+    width: 100% !important; /* 横幅を最大に */
+    padding: 15px !important; /* 内側の余白を増やして入力しやすく */
+    font-size: 16px !important; /* スマホで見たときに拡大されないサイズに */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* メッセージ（textarea）の高さをもっと確保する */
+.formrun-embed textarea {
+    height: 150px !important; /* 高さを指定して広くする */
+}<script src="https://sdk.form.run/js/v2/embed.js"></script>
+<div
+  class="formrun-embed"
+  data-formrun-form="@toikakekikaku-contact"
+  data-formrun-redirect="true"
+>
+</div>
