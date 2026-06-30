@@ -2,18 +2,29 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トイカケ企画 お問い合わせ</title>
     <style>
-        /* ここでメッセージ欄の高さを指定します */
+        <style>
+    /* フォームのメッセージ欄を大きくする */
+    .formrun-embed textarea {
+        min-height: 200px !important;
+    }
+
+    /* 全体のフォントを明朝体にする */
+    body {
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    }
+</style>
+        /* 入力欄を大きくするスタイル */
         .formrun-embed textarea {
-            min-height: 200px !important; /* 高さを200pxにする */
-            font-size: 16px !important;   /* スマホで見やすいサイズ */
+            min-height: 200px !important;
         }
     </style>
 </head>
 <body>
 
-    <h1>お問い合わせ</h1>
+    <h1>トイカケ企画 お問い合わせフォーム</h1>
 
     <script src="https://sdk.form.run/js/v2/embed.js"></script>
     <div class="formrun-embed"
